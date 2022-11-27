@@ -1,0 +1,11 @@
+name: PixelItem
+version: '${project.version}'
+main: com.github.nulld4201.pixelitem.Main
+api-version: 1.16
+prefix: Pixel_Item
+authors: [ Null_D ]
+description: PixelAdventure Items
+
+commands:
+  pai:
+    description: "Get all pixel items."
