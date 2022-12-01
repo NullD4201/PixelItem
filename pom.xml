@@ -6,7 +6,7 @@
 
     <groupId>com.github.nulld4201</groupId>
     <artifactId>pixelitem</artifactId>
-    <version>1.1.1</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>PixelItem</name>
@@ -67,7 +67,7 @@
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
+            <artifactId>spigot-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
