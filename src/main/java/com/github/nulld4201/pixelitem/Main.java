@@ -52,6 +52,9 @@ public final class Main extends JavaPlugin implements CommandExecutor {
         pai.setItem(13, STRANGE_STEW.getItemStack());
         pai.setItem(14, CERBERUS_KEY.getItemStack());
         pai.setItem(15, EYE_OF_HELL.getItemStack());
+        pai.setItem(16, UNKNOWN_PAPER.getItemStack());
+        pai.setItem(17, BLACK_LEATHER.getItemStack());
+        pai.setItem(18, BLACK_BOOK.getItemStack());
 
         if (label.equalsIgnoreCase("pai") && currentPlayer.isOp()) {
             currentPlayer.openInventory(pai);

@@ -26,7 +26,10 @@ public enum PixelItems {
     BAT_MAP(Material.PAPER, "박쥐 지도", ChatColor.RED, 2, true, false, false, false, false),
     STRANGE_STEW(Material.MUSHROOM_STEW, "알 수 없는 스튜", ChatColor.DARK_PURPLE, 1, true, false, false, false, false),
     CERBERUS_KEY(Material.BLAZE_ROD, "케르베로스 열쇠", ChatColor.GOLD, 1, true, false, false, false, false),
-    EYE_OF_HELL(Material.ENDER_EYE, "지옥의 눈", ChatColor.DARK_RED, 1, true, false, false, false, false);
+    EYE_OF_HELL(Material.ENDER_EYE, "지옥의 눈", ChatColor.DARK_RED, 1, true, false, false, false, false),
+    UNKNOWN_PAPER(Material.PAPER, "알 수 없는 종이", ChatColor.GRAY, 3, true, false, false, false, false),
+    BLACK_LEATHER(Material.LEATHER, "검은 가죽", ChatColor.GRAY, 1, true, false, false, false, false),
+    BLACK_BOOK(Material.BOOK, "검은 서적", ChatColor.GRAY, 2, true, false, false, false, false);
 
     private final Material itemMaterial;
     private final String itemDisplayName;
