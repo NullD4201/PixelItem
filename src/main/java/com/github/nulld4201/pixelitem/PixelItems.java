@@ -11,25 +11,26 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.MapMeta;
 
 public enum PixelItems {
-    TURTLE_MAP(Material.PAPER, "거북이 지도", ChatColor.DARK_GREEN, 1, true, false, false, false, false),
-    TREE_COMPASS(Material.COMPASS, "드루이드 나침반", ChatColor.GREEN, 1, true, false, false, false, false),
-    SACRIFICE_SWORD(Material.GOLDEN_SWORD, "제사용 칼", ChatColor.YELLOW, 1, true, false, false, false, false),
-    BLOOD(Material.RED_DYE, "피", ChatColor.DARK_RED, 1, true, false, false, false, false),
-    BLOOD_BOWL(Material.BEETROOT_SOUP, "피가 담긴 그릇", ChatColor.DARK_RED, 1, true, false, false, false, false),
-    SOUL_BOOK(Material.BOOK, "영혼이 담긴 책", ChatColor.AQUA, 1, true, false, false, false, false),
-    SOUL_LANTERN(Material.HEART_OF_THE_SEA, "영혼이 담긴 랜턴", ChatColor.DARK_AQUA, 1, true, false, false, false, false),
-    ICE_HEART(Material.HEART_OF_THE_SEA, "얼어붙은 심장", ChatColor.AQUA, 2, true, false, false, false, false),
-    VIKING_COMPASS(Material.COMPASS, "바이킹 나침반", ChatColor.BLUE, 2, true, false, false, false, false),
-    BAT_TOOTH(Material.IRON_NUGGET, "박쥐의 송곳니", ChatColor.GRAY, 1, true, false, false, false, false),
-    THIRSTY_DAGGER(Material.IRON_SWORD, "목마른 단검", ChatColor.WHITE, 1, true, false, false, false, false),
-    BLOOD_BOTTLE(Material.POTION, "피가 담긴 병", ChatColor.DARK_RED, 1, true, false, false, false, false),
-    BAT_MAP(Material.PAPER, "박쥐 지도", ChatColor.RED, 2, true, false, false, false, false),
-    STRANGE_STEW(Material.MUSHROOM_STEW, "알 수 없는 스튜", ChatColor.DARK_PURPLE, 1, true, false, false, false, false),
-    CERBERUS_KEY(Material.BLAZE_ROD, "케르베로스 열쇠", ChatColor.GOLD, 1, true, false, false, false, false),
-    EYE_OF_HELL(Material.ENDER_EYE, "지옥의 눈", ChatColor.DARK_RED, 1, true, false, false, false, false),
-    UNKNOWN_PAPER(Material.PAPER, "알 수 없는 종이", ChatColor.WHITE, 3, true, false, false, false, false),
-    BLACK_LEATHER(Material.LEATHER, "검은 가죽", ChatColor.GRAY, 1, true, false, false, false, false),
-    BLACK_BOOK(Material.BOOK, "검은 서적", ChatColor.GRAY, 2, true, false, false, false, false);
+    TURTLE_MAP(Material.PAPER, "거북이 지도", ChatColor.DARK_GREEN, 1, true, false, false),
+    TREE_COMPASS(Material.COMPASS, "드루이드 나침반", ChatColor.GREEN, 1, true, false, false),
+    SACRIFICE_SWORD(Material.GOLDEN_SWORD, "제사용 칼", ChatColor.YELLOW, 1, true, false, false),
+    BLOOD(Material.RED_DYE, "피", ChatColor.DARK_RED, 1, true, false, false),
+    BLOOD_BOWL(Material.BEETROOT_SOUP, "피가 담긴 그릇", ChatColor.DARK_RED, 1, true, false, false),
+    SOUL_BOOK(Material.BOOK, "영혼이 담긴 책", ChatColor.AQUA, 1, true, false, false),
+    SOUL_LANTERN(Material.HEART_OF_THE_SEA, "영혼이 담긴 랜턴", ChatColor.DARK_AQUA, 1, true, false, false),
+    ICE_HEART(Material.HEART_OF_THE_SEA, "얼어붙은 심장", ChatColor.AQUA, 2, true, false, false),
+    VIKING_COMPASS(Material.COMPASS, "바이킹 나침반", ChatColor.BLUE, 2, true, false, false),
+    BAT_TOOTH(Material.IRON_NUGGET, "박쥐의 송곳니", ChatColor.GRAY, 1, true, false, false),
+    THIRSTY_DAGGER(Material.IRON_SWORD, "목마른 단검", ChatColor.WHITE, 1, true, false, false),
+    BLOOD_BOTTLE(Material.POTION, "피가 담긴 병", ChatColor.DARK_RED, 1, true, false, false),
+    BAT_MAP(Material.PAPER, "박쥐 지도", ChatColor.RED, 2, true, false, false),
+    STRANGE_STEW(Material.MUSHROOM_STEW, "알 수 없는 스튜", ChatColor.DARK_PURPLE, 1, true, false, false),
+    CERBERUS_KEY(Material.BLAZE_ROD, "케르베로스 열쇠", ChatColor.GOLD, 1, true, false, false),
+    EYE_OF_HELL(Material.ENDER_EYE, "지옥의 눈", ChatColor.DARK_RED, 1, true, false, false),
+    UNKNOWN_PAPER(Material.PAPER, "알 수 없는 종이", ChatColor.WHITE, 3, true, false, false),
+    BLACK_LEATHER(Material.LEATHER, "검은 가죽", ChatColor.GRAY, 1, true, false, false),
+    BLACK_BOOK(Material.BOOK, "검은 서적", ChatColor.GRAY, 2, true, false, false),
+    HOGRIDER_AXE(Material.BOOK, "호그라이더의 도끼", ChatColor.YELLOW, 1, true, false, false);
 
     private final Material itemMaterial;
     private final String itemDisplayName;
@@ -37,20 +38,14 @@ public enum PixelItems {
     private final int itemCustomModelData;
 
     private final boolean itemDisplayName_Bold;
-    private final boolean itemDisplayName_Italic;
-    private final boolean itemDisplayName_Underlined;
-    private final boolean itemDisplayName_Strikethrough;
     private final boolean itemDisplayName_Obfuscated;
 
-    PixelItems(Material itemMaterial, String itemDisplayName, ChatColor itemDisplayName_Color, int itemCustomModelData, boolean itemDisplayName_Bold, boolean itemDisplayName_Italic, boolean itemDisplayName_Underlined, boolean itemDisplayName_Strikethrough, boolean itemDisplayName_Obfuscated) {
+    PixelItems(Material itemMaterial, String itemDisplayName, ChatColor itemDisplayName_Color, int itemCustomModelData, boolean itemDisplayName_Bold, boolean itemDisplayName_Italic, boolean itemDisplayName_Obfuscated) {
         this.itemMaterial = itemMaterial;
         this.itemDisplayName = itemDisplayName;
         this.itemDisplayName_Color = itemDisplayName_Color;
         this.itemCustomModelData = itemCustomModelData;
         this.itemDisplayName_Bold = itemDisplayName_Bold;
-        this.itemDisplayName_Italic = itemDisplayName_Italic;
-        this.itemDisplayName_Underlined = itemDisplayName_Underlined;
-        this.itemDisplayName_Strikethrough = itemDisplayName_Strikethrough;
         this.itemDisplayName_Obfuscated = itemDisplayName_Obfuscated;
     }
 
@@ -69,15 +64,6 @@ public enum PixelItems {
     public boolean getItemDisplayName_Bold() {
         return this.itemDisplayName_Bold;
     }
-    public boolean getItemDisplayName_Italic() {
-        return this.itemDisplayName_Italic;
-    }
-    public boolean getItemDisplayName_Underlined() {
-        return this.itemDisplayName_Underlined;
-    }
-    public boolean getItemDisplayName_Strikethrough() {
-        return this.itemDisplayName_Strikethrough;
-    }
     public boolean getItemDisplayName_Obfuscated() {
         return this.itemDisplayName_Obfuscated;
     }
@@ -87,9 +73,6 @@ public enum PixelItems {
         ItemMeta itemMeta = itemStack.getItemMeta();
         String displayName = itemDisplayName;
         if (itemDisplayName_Bold) displayName = ChatColor.BOLD + displayName;
-        if (itemDisplayName_Italic) displayName = ChatColor.ITALIC + displayName;
-        if (itemDisplayName_Underlined) displayName = ChatColor.UNDERLINE + displayName;
-        if (itemDisplayName_Strikethrough) displayName = ChatColor.STRIKETHROUGH + displayName;
         if (itemDisplayName_Obfuscated) displayName = ChatColor.MAGIC+ displayName;
         displayName = itemDisplayName_Color + displayName;
         itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
