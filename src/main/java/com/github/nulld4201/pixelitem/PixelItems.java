@@ -30,7 +30,7 @@ public enum PixelItems {
     UNKNOWN_PAPER(Material.PAPER, "알 수 없는 종이", ChatColor.WHITE, 3, true, false),
     BLACK_LEATHER(Material.LEATHER, "검은 가죽", ChatColor.GRAY, 1, true, false),
     BLACK_BOOK(Material.BOOK, "검은 서적", ChatColor.GRAY, 2, true, false),
-    HOGRIDER_AXE(Material.COMPASS, "호그라이더의 도끼", ChatColor.YELLOW, 1, true, false);
+    HOGRIDER_AXE(Material.COMPASS, "호그라이더의 도끼", ChatColor.YELLOW, 3, true, false);
 
     private final Material itemMaterial;
     private final String itemDisplayName;
